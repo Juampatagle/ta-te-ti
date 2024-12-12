@@ -1,0 +1,86 @@
+/* estilo body */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+  }
+  
+  /* contenedor del juego */
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* estilo titulo */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* estilo de la tabla del juego */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background: #ecf0f1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .cell:hover:not(.taken) {
+    transform: scale(1.1);
+    background: #bdc3c7;
+  }
+  
+  .cell.taken {
+    cursor: not-allowed;
+    color: #2c3e50;
+  }
+  
+  /* estilo mensaje */
+  #message {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* estilo boton */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: grey;
+    transform: scale(1.05);
+  }
+  
